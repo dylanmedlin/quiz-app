@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    background-color: rgb(255, 255, 255);
+    background-image: url("images/nav-bg.gif");
+}
+
+#header {
+    background-color: #333;
+    background-image: url("images/nav-bg.gif");
+    
+}
+
+#start_page_header {
+    height: 86px;
+    line-height: 86px;
+}
+
+body {
+    font-family: verdana;
+    background-color: lightskyblue;
+    background-image: url("images/bg.jpg");
+}
+
+/* Home Page */
+#selectquiz {
+    font-size: x-large;
+    text-align: center;
+    margin: 100px auto;
+    width: 250px;
+    padding: 30px;
+    background-color: lightsteelblue;
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: 15px;
+}
+
+/* Buttons to select quiz subject */
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 8px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    transition: all 0.3s;
+    border-radius: 10px;
+  }
+
+.math {background-color: #E04C35;} /* Red */
+.science {background-color: #24758C;} /* Blue */
+.geography {background-color: #27A64D;} /* Green */
+.history {background-color: #E08B35;} /* Yellow */
+
+/* Slightly change buttons color while hovering */
+.math:hover{
+    background-color: #F6715B; 
+}
+
+.science:hover{
+    background-color: #3C8599; 
+}
+
+.geography:hover{
+    background-color: #44B666; 
+}
+
+.history:hover{
+    background-color: #F6AA5B; 
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.buttonlist {
+    padding: 0;
+    width: 766px;
+    margin: auto;
+}
+
+#quizbuttons {
+    margin-top: 5%;
+}
+
+/* Navigation Bar */
+
+#navbuttons {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#rightbuttons{
+    float:right;
+}
+
+#navbuttons li {
+    float: left;
+}
+  
+#navbuttons a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbuttons a:hover {
+    background-color: #111;
+}
+
+#user {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#divbutton {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#divbutton:hover {
+    background-color: #111;
+}
+
+/* Quiz Page */
+
+#score {
+    font-size: x-large;
+    text-align: center;
+    margin: 15px auto;
+    width: 250px;
+    padding: 15px;
+    background-color: lightgray;
+    border-style: groove;
+    border-width: 4px;
+    border-radius: 15px;
+}
+
+#question {
+    font-size: x-large;
+    text-align: center;
+    margin: 150px auto;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    width: 650px;
+    padding: 15px;
+    background-color: lightgray;
+    border-style: groove;
+    border-width: 4px;
+    border-radius: 15px;
+}
+
+.answer {
+    background-color:#115F75;
+    height: 75px;
+    line-height: 75px;
+}
+
+.skip {
+    background-color: #BD2D16;
+    width: 110px;
+    height: 30px;
+    margin-left: 300px;
+    line-height: 30px;
+}
+
+.answer:hover {
+    background-color: #24758C;
+}
+
+.skip:hover {
+    background-color:#E04C35;
+}
+
+/* End page */
+
+#endscore {
+    font-size: x-large;
+    text-align: center;
+    margin: 100px auto;
+    width: 250px;
+    padding: 15px;
+    background-color: lightgray;
+    border-style: groove;
+    border-width: 4px;
+    border-radius: 15px;
+}
+
+.goodScore {
+    color: #44B666;
+}
+
+.retry {
+    background-color: #108C36;
+    width: 110px;
+    height: 30px;
+    margin: 75px auto;
+    line-height: 30px;
+    display: block;
+}
+
+.retry:hover {
+    background-color:#27A64D;
+}
+
+.home {
+    background-color:#BD2D16;
+    width: 110px;
+    height: 30px;
+    margin: 75px auto;
+    line-height: 30px;
+    display: block;
+}
+
+.home:hover {
+    background-color: #E04C35;
+}
+
+/* Start Page */
+
+.start_buttons {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 32px;
+}
+
+.logins {
+    width:100%;
+    padding: 0%;
+    line-height: 50px;
+    height: 50px;
+    background-color: #333;
+    margin: 30px auto;
+    color: white;
+}
+
+.logins:hover {
+    background-color: rgb(74, 74, 74);
+}
+
+.login {
+    background-color: #E04C35;
+}
+
+.register {
+    background-color: #24758C;
+}
+
+.guest {
+    background-color: #27A64D;
+}
+
+/* Login and Register Pages */
+
+#logintext {
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    background-color: #333;
+    width: 200px;
+    margin: 75px auto;
+    padding: 10px;
+}
+
+button {   
+    background-color: #6d6d6d; 
+    width: 100px;  
+    color: white;   
+    padding: 15px;   
+    margin: 10px 0px;   
+    border: none;   
+    cursor: pointer;   
+}
+
+input[type=text], input[type=password], input[type=re-password] {   
+    width: 100%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px black;   
+    box-sizing: border-box;   
+}  
+button:hover {   
+    opacity: 0.7;   
+}   
+.cancelbtn {   
+    width: auto;   
+    padding: 10px 18px;  
+    margin: 10px 5px;  
+}        
+     
+.container {  
+    width: 280px;
+    padding: 15px;
+    margin: 75px auto;  
+    background-color: lightgray;  
+}
+
+/* Footer */
+
+footer {
+    background-color:#e5e5e5;
+    width: 100%;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    
+}
+
+/* transition effects */
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+/* For mobile phones: */
+@media only screen and (max-width:822px) {
+    /* Changes quiz/answer buttons when on smaller screen */
+    #score {
+        font-size: large;
+        width: 95%;
+        padding: 5px;
+    }
+
+    /* reduce question margin */
+    #question {
+        font-size: large;
+        margin: 15px auto;
+        width: 95%;
+        padding: 5px;
+    }
+    
+    .button {
+        width:95%;
+        padding: 0%;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+    }
+
+    .buttonlist {
+        width: 100%;
+    }
+    
+    .skip {
+        margin-left: 8px;
+    }
+
+    #selectquiz {
+        font-size: large;
+        margin: 15px auto;
+        width: 75%;
+        padding: 15px;
+    }
+}

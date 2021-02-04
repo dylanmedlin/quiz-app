@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Not visable on webpage -->
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dylan's Quizzes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.4.9/vue-router.min.js'></script>
+</head>
+
+<!--  Visable on webpage -->
+<div id="app">
+    <navheader></navheader>
+    <transition name="fade" mode="out-in">
+        <router-view></router-view>
+    </transition>
+    <!-- Copyright bar at bottom of page -->
+    <footer>
+        © copyright Dylan Medlin
+    </footer>
+</div>
+
+<script  src="./main.js"></script>
+</html>
